@@ -2,7 +2,7 @@ package me.jeeson.android.samples.dagger2.base;
 
 import dagger.android.AndroidInjector;
 import dagger.android.support.DaggerApplication;
-import me.jeeson.android.samples.dagger2.base.di.component.DaggerAppComponent;
+import me.jeeson.android.samples.dagger2.base.di.component.DaggerBaseAppComponent;
 
 /**
  * @Description:
@@ -13,6 +13,6 @@ public class BaseApplication  extends DaggerApplication {
 
     @Override
     protected AndroidInjector<? extends DaggerApplication> applicationInjector() {
-        return DaggerAppComponent.builder().create(this);
+        return DaggerBaseAppComponent.builder().create(this);
     }
 }

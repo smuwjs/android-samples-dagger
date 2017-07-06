@@ -1,13 +1,12 @@
-package me.jeeson.android.samples.dagger2.base.di.module;
+package me.jeeson.android.samples.dagger2.di.module;
 
 
-import com.zl.dagger2example.di.scopes.ActivityScope;
 
 import dagger.Module;
 
 import dagger.android.ContributesAndroidInjector;
 
-import me.jeeson.android.samples.dagger2.di.module.MainModule;
+import me.jeeson.android.samples.dagger2.base.di.scope.ActivityScope;
 import me.jeeson.android.samples.dagger2.ui.MainActivity;
 
 
