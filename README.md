@@ -1,10 +1,8 @@
 #Dagger2Example
 
-##Dagger2使用例子
+##Dagger2.11使用例子
 
-##运行效果图
-
-![Dsgger2](https://raw.githubusercontent.com/simplezhli/Dagger2Example/master/gif/dagger2.gif)
+使用Dagger2.11模块拆分的例子。
 
 ##具体说明
 
