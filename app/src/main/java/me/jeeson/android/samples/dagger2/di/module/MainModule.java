@@ -17,12 +17,14 @@ import me.jeeson.android.samples.dagger2.di.qualifier.UserType;
 @Module
 public class MainModule {
 
+    @ActivityScope
     @UserType(UserType.NAME)
     @Provides
     User provideUserName() {
         return new User("Jeeson");
     }
 
+    @ActivityScope
     @UserType(UserType.AGE)
     @Provides
     User provideUserAge() {
