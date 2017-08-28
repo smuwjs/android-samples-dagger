@@ -7,5 +7,5 @@ import me.jeeson.android.samples.dagger2.base.BaseFragment;
  * @Anthor: Jeeson
  * @Time: 2017/8/28 9:10
  */
-public class MainFragent extends BaseFragment {
+public class MainFragment extends BaseFragment {
 }

@@ -4,7 +4,7 @@ import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
 import me.jeeson.android.samples.dagger2.base.di.scope.ActivityScope;
 import me.jeeson.android.samples.dagger2.ui.MainActivity;
-import me.jeeson.android.samples.dagger2.ui.MainFragent;
+import me.jeeson.android.samples.dagger2.ui.MainFragment;
 
 /**
  * @Description:
@@ -20,5 +20,5 @@ public abstract class MainActivityModule {
 
     @ActivityScope
     @ContributesAndroidInjector(modules = MainModule.class)
-    abstract MainFragent mainFragent();
+    abstract MainFragment mainFragent();
 }
