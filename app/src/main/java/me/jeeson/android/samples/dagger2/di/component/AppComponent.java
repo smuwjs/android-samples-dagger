@@ -3,9 +3,9 @@ package me.jeeson.android.samples.dagger2.di.component;
 import dagger.Component;
 
 import me.jeeson.android.samples.dagger2.SampleApplication;
-import me.jeeson.android.samples.dagger2.base.di.component.BaseAppComponent;;
-import me.jeeson.android.samples.dagger2.base.di.scope.ApplicationScope;
-import me.jeeson.android.samples.dagger2.di.module.MainActivityModule;
+import me.jeeson.android.samples.dagger2.arch.base.di.component.BaseAppComponent;;
+import me.jeeson.android.samples.dagger2.arch.base.di.scope.ApplicationScope;
+import me.jeeson.android.samples.dagger2.di.module.BuildersModule;
 
 /**
  * @Description:
@@ -14,7 +14,7 @@ import me.jeeson.android.samples.dagger2.di.module.MainActivityModule;
  */
 @ApplicationScope
 @Component(modules = {
-        MainActivityModule.class
+        BuildersModule.class,
         }, dependencies =  {
         BaseAppComponent.class
 })

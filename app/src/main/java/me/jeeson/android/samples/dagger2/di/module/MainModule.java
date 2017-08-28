@@ -3,8 +3,8 @@ package me.jeeson.android.samples.dagger2.di.module;
 
 import dagger.Module;
 import dagger.Provides;
-import dagger.android.ContributesAndroidInjector;
-import me.jeeson.android.samples.dagger2.base.di.scope.ActivityScope;
+
+import me.jeeson.android.samples.dagger2.arch.base.di.scope.ActivityScope;
 import me.jeeson.android.samples.dagger2.bean.User;
 import me.jeeson.android.samples.dagger2.di.qualifier.UserType;
 

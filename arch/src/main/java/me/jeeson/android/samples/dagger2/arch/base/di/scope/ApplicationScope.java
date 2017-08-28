@@ -1,4 +1,4 @@
-package me.jeeson.android.samples.dagger2.base.di.scope;
+package me.jeeson.android.samples.dagger2.arch.base.di.scope;
 
 import java.lang.annotation.Retention;
 

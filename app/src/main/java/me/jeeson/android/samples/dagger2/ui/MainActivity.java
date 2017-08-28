@@ -2,12 +2,13 @@ package me.jeeson.android.samples.dagger2.ui;
 
 import android.app.Application;
 import android.os.Bundle;
+import android.util.Log;
 
 
 import javax.inject.Inject;
 
 import me.jeeson.android.samples.dagger2.R;
-import me.jeeson.android.samples.dagger2.base.BaseActivity;
+import me.jeeson.android.samples.dagger2.arch.base.BaseActivity;
 import me.jeeson.android.samples.dagger2.bean.User;
 import me.jeeson.android.samples.dagger2.di.qualifier.UserType;
 
@@ -26,11 +27,13 @@ public class MainActivity extends BaseActivity {
     @Inject
     User user2;
 
+    @Inject
+    Application application;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        System.out.println(user1);
-        System.out.println(user2);
+        Log.d("test Dagger",""+ (application != null));
     }
 }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package me.jeeson.android.samples.dagger2.base.di.scope;
+package me.jeeson.android.samples.dagger2.arch.base.di.scope;
 
 import java.lang.annotation.Retention;
 

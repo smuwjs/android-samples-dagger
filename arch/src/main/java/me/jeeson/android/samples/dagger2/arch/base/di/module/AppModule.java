@@ -1,7 +1,6 @@
-package me.jeeson.android.samples.dagger2.base.di.module;
+package me.jeeson.android.samples.dagger2.arch.base.di.module;
 
 import android.app.Application;
-import android.content.Context;
 
 
 import javax.inject.Singleton;

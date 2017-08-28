@@ -1,4 +1,4 @@
-package me.jeeson.android.samples.dagger2.base.di.component;
+package me.jeeson.android.samples.dagger2.arch.base.di.component;
 
 
 import android.app.Application;
@@ -6,10 +6,10 @@ import android.app.Application;
 import javax.inject.Singleton;
 
 import dagger.Component;
-import dagger.android.AndroidInjector;
+import dagger.android.AndroidInjectionModule;
 import dagger.android.support.AndroidSupportInjectionModule;
-import me.jeeson.android.samples.dagger2.base.BaseApplication;
-import me.jeeson.android.samples.dagger2.base.di.module.AppModule;
+import me.jeeson.android.samples.dagger2.arch.base.BaseApplication;
+import me.jeeson.android.samples.dagger2.arch.base.di.module.AppModule;
 
 /**
  * @Description:
@@ -20,7 +20,8 @@ import me.jeeson.android.samples.dagger2.base.di.module.AppModule;
 @Singleton
 @Component(modules = {
         AppModule.class,
-        AndroidSupportInjectionModule.class
+        AndroidSupportInjectionModule.class,
+        AndroidInjectionModule.class
 })
 public interface BaseAppComponent{
 

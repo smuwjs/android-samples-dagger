@@ -1,4 +1,4 @@
-package me.jeeson.android.samples.dagger2.base;
+package me.jeeson.android.samples.dagger2.arch.base;
 
 import android.app.Activity;
 import android.app.Application;
@@ -8,9 +8,9 @@ import javax.inject.Inject;
 import dagger.android.AndroidInjector;
 import dagger.android.DispatchingAndroidInjector;
 import dagger.android.HasActivityInjector;
-import me.jeeson.android.samples.dagger2.base.di.component.BaseAppComponent;
-import me.jeeson.android.samples.dagger2.base.di.component.DaggerBaseAppComponent;
-import me.jeeson.android.samples.dagger2.base.di.module.AppModule;
+import me.jeeson.android.samples.dagger2.arch.base.di.component.BaseAppComponent;
+import me.jeeson.android.samples.dagger2.arch.base.di.component.DaggerBaseAppComponent;
+import me.jeeson.android.samples.dagger2.arch.base.di.module.AppModule;
 
 /**
  * @Description:

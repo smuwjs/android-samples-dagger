@@ -1,8 +1,7 @@
-package me.jeeson.android.samples.dagger2.base;
+package me.jeeson.android.samples.dagger2.arch.base;
 
 
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 
 import javax.inject.Inject;
 
@@ -13,15 +12,15 @@ import dagger.android.support.HasSupportFragmentInjector;
 /**
  * @Description:
  * @Anthor: Jeeson
- * @Time: 2017/7/5 16:41
+ * @Time: 2017/7/6 10:38
  */
-public abstract class BaseActivity extends AppCompatActivity implements HasSupportFragmentInjector {
+public class BaseFragment extends Fragment implements HasSupportFragmentInjector {
 
     @Inject
-    DispatchingAndroidInjector<Fragment> mFragmentInjector;
+    DispatchingAndroidInjector<Fragment> childFragmentInjector;
 
     @Override
     public AndroidInjector<Fragment> supportFragmentInjector() {
-        return mFragmentInjector;
+        return childFragmentInjector;
     }
 }
