@@ -1,26 +1,24 @@
 package me.jeeson.android.samples.dagger2.di.component;
 
-
-import javax.inject.Singleton;
-
 import dagger.Component;
-import dagger.android.AndroidInjector;
-import dagger.android.support.AndroidSupportInjectionModule;
+
 import me.jeeson.android.samples.dagger2.SampleApplication;
-import me.jeeson.android.samples.dagger2.di.module.BuilderModule;
+import me.jeeson.android.samples.dagger2.base.di.component.BaseAppComponent;;
+import me.jeeson.android.samples.dagger2.base.di.scope.ApplicationScope;
+import me.jeeson.android.samples.dagger2.di.module.MainActivityModule;
 
 /**
  * @Description:
  * @Anthor: Jeeson
  * @Time: 2017/7/6 11:22
  */
-@Singleton
+@ApplicationScope
 @Component(modules = {
-        BuilderModule.class,
-        AndroidSupportInjectionModule.class
+        MainActivityModule.class
+        }, dependencies =  {
+        BaseAppComponent.class
 })
-public interface AppComponent extends AndroidInjector<SampleApplication>{
+public interface AppComponent{
 
-    @Component.Builder
-    abstract class Builder extends AndroidInjector.Builder<SampleApplication> {}
+    void inject(SampleApplication sampleApplication);
 }

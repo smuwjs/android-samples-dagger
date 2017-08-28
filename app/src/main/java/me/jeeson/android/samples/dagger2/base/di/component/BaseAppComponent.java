@@ -1,6 +1,8 @@
 package me.jeeson.android.samples.dagger2.base.di.component;
 
 
+import android.app.Application;
+
 import javax.inject.Singleton;
 
 import dagger.Component;
@@ -20,8 +22,9 @@ import me.jeeson.android.samples.dagger2.base.di.module.AppModule;
         AppModule.class,
         AndroidSupportInjectionModule.class
 })
-public interface BaseAppComponent extends AndroidInjector<BaseApplication>{
+public interface BaseAppComponent{
 
-    @Component.Builder
-    abstract class Builder extends AndroidInjector.Builder<BaseApplication> {}
+    void inject(BaseApplication baseApplication);
+
+    Application application();
 }
