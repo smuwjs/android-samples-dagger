@@ -2,6 +2,8 @@ package me.jeeson.android.samples.dagger2.di.component;
 
 import dagger.Component;
 
+import dagger.android.AndroidInjectionModule;
+import dagger.android.support.AndroidSupportInjectionModule;
 import me.jeeson.android.samples.dagger2.SampleApplication;
 import me.jeeson.android.samples.dagger2.arch.base.di.component.BaseAppComponent;;
 import me.jeeson.android.samples.dagger2.arch.base.di.scope.ApplicationScope;
@@ -15,6 +17,8 @@ import me.jeeson.android.samples.dagger2.di.module.BuildersModule;
 @ApplicationScope
 @Component(modules = {
         BuildersModule.class,
+        AndroidSupportInjectionModule.class,
+        AndroidInjectionModule.class
         }, dependencies =  {
         BaseAppComponent.class
 })
