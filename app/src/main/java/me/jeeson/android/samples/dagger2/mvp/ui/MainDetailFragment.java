@@ -1,7 +1,7 @@
-package me.jeeson.android.samples.dagger2.ui;
+package me.jeeson.android.samples.dagger2.mvp.ui;
 
 
-import me.jeeson.android.samples.dagger2.arch.base.BaseFragment;
+import me.jeeson.android.samples.dagger2.arch.base.base.BaseFragment;
 
 /**
  * @Description:

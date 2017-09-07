@@ -7,6 +7,8 @@ import dagger.Provides;
 import me.jeeson.android.samples.dagger2.arch.base.di.scope.ActivityScope;
 import me.jeeson.android.samples.dagger2.bean.User;
 import me.jeeson.android.samples.dagger2.di.qualifier.UserType;
+import me.jeeson.android.samples.dagger2.mvp.contract.MainContract;
+import me.jeeson.android.samples.dagger2.mvp.model.MainModel;
 
 /**
  * @Description:
@@ -29,6 +31,12 @@ public class MainModule {
     @Provides
     User provideUserAge() {
         return new User(23);
+    }
+
+    @ActivityScope
+    @Provides
+    MainContract.Model provideMainModel(MainModel model) {
+        return model;
     }
 
 }

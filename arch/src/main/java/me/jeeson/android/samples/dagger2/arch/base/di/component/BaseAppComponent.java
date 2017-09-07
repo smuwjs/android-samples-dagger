@@ -8,7 +8,7 @@ import javax.inject.Singleton;
 import dagger.Component;
 import dagger.android.AndroidInjectionModule;
 import dagger.android.support.AndroidSupportInjectionModule;
-import me.jeeson.android.samples.dagger2.arch.base.BaseApplication;
+import me.jeeson.android.samples.dagger2.arch.base.base.BaseApplication;
 import me.jeeson.android.samples.dagger2.arch.base.di.module.AppModule;
 
 /**

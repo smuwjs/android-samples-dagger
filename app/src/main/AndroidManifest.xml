@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="me.jeeson.android.samples.dagger2.ui.MainActivity">
+        <activity android:name="me.jeeson.android.samples.dagger2.mvp.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

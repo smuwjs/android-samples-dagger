@@ -1,6 +1,6 @@
 package me.jeeson.android.samples.dagger2;
 
-import me.jeeson.android.samples.dagger2.arch.base.BaseApplication;
+import me.jeeson.android.samples.dagger2.arch.base.base.BaseApplication;
 import me.jeeson.android.samples.dagger2.di.component.AppComponent;
 import me.jeeson.android.samples.dagger2.di.component.DaggerAppComponent;
 

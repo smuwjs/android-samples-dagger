@@ -4,8 +4,8 @@ import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
 import me.jeeson.android.samples.dagger2.arch.base.di.scope.ActivityScope;
 import me.jeeson.android.samples.dagger2.arch.base.di.scope.FragmentScope;
-import me.jeeson.android.samples.dagger2.ui.MainActivity;
-import me.jeeson.android.samples.dagger2.ui.MainDetailFragment;
+import me.jeeson.android.samples.dagger2.mvp.ui.MainActivity;
+import me.jeeson.android.samples.dagger2.mvp.ui.MainDetailFragment;
 
 /**
  * @Description:

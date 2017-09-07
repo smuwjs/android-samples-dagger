@@ -1,4 +1,4 @@
-package me.jeeson.android.samples.dagger2.arch.base;
+package me.jeeson.android.samples.dagger2.arch.base.base;
 
 import android.app.Activity;
 import android.app.Application;
