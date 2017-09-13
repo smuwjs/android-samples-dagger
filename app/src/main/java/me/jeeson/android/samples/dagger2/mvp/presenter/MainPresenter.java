@@ -17,8 +17,8 @@ import me.jeeson.android.samples.dagger2.mvp.contract.MainContract;
 public class MainPresenter extends BasePresenter<MainContract.Model, MainContract.View> {
 
     @Inject
-    public MainPresenter(MainContract.Model model) {
-        super(model);
+    public MainPresenter(MainContract.Model model, MainContract.View view) {
+        super(model, view);
     }
 
     public void testPresenter() {

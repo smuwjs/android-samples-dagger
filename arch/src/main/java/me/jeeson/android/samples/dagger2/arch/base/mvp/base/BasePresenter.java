@@ -42,20 +42,4 @@ public class BasePresenter<M extends IModel, V extends IView>  implements IPrese
         this.mModel = null;
         this.mRootView = null;
     }
-
-    public M getmModel() {
-        return mModel;
-    }
-
-    public void setmModel(M mModel) {
-        this.mModel = mModel;
-    }
-
-    public V getmRootView() {
-        return mRootView;
-    }
-
-    public void setmRootView(V mRootView) {
-        this.mRootView = mRootView;
-    }
 }

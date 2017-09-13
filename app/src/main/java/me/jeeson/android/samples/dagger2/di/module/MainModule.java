@@ -9,6 +9,7 @@ import me.jeeson.android.samples.dagger2.bean.User;
 import me.jeeson.android.samples.dagger2.di.qualifier.UserType;
 import me.jeeson.android.samples.dagger2.mvp.contract.MainContract;
 import me.jeeson.android.samples.dagger2.mvp.model.MainModel;
+import me.jeeson.android.samples.dagger2.mvp.ui.MainActivity;
 
 /**
  * @Description:
@@ -39,4 +40,9 @@ public class MainModule {
         return model;
     }
 
+    @ActivityScope
+    @Provides
+    MainContract.View provideMainView(MainActivity mainActivity) {
+        return mainActivity;
+    }
 }
